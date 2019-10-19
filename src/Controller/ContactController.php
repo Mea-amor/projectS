@@ -5,7 +5,7 @@ namespace App\Controller;
 use Symfony\Component\HttpFoundation\Response;
 use Twig\Environment;
 
-class ContacteController
+class ContactController
 {
      
     /**
@@ -22,7 +22,7 @@ class ContacteController
      {
         // $number = random_int(0, 100);
  
-         return new Response($this->twig ->render('contacte/acceuilContacte.html.twig') );
+         return new Response($this->twig ->render('contacte/contact.html.twig') );
      }
     
     }

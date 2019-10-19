@@ -1,5 +1,6 @@
   {% extends "base.html.twig" %}
  
+  {% block title %} Acceuil {% endblock %}
  {% block body %}
 
   
@@ -17,9 +18,9 @@
    <ul class="main-menu-nav">
       <li><a href="{{ path('Acceuil')}}" class="orange"><i class="fa fa-home fa-fw"></i>&nbsp; Home</a></li>
       <li><a href="{{ path('Client.index')}}" class="yellow"><i class="fa fa-book fa-fw front"></i>&nbsp; Client</a></li>
-      <li><a href="#" class="green"><i class="fa fa-folder fa-fw"></i>&nbsp; Produit</a></li>
-      <li><a href="#" class="purple"><i class="fa fa-envelope fa-fw"></i>&nbsp; Commande</a></li>
-      <li><a href="#" class="purple"><i class="fa fa-envelope fa-fw"></i>&nbsp; contact</a></li>
+      <li><a href="{{ path('Produit.index')}}" class="green"><i class="fa fa-folder fa-fw"></i>&nbsp; Produit</a></li>
+      <li><a href=""{{ path('Commande.index')}}class="purple"><i class="fa fa-envelope fa-fw"></i>&nbsp; Commande</a></li>
+      <li><a href="{{ path('Contact.index')}}" class="purple"><i class="fa fa-envelope fa-fw"></i>&nbsp; contact</a></li>
       <li><a href="#" class="red"><i class="fa fa-users fa-fw"></i>&nbsp; About</a></li>
     </ul>
 
@@ -41,15 +42,15 @@
                     
                 </li>
                 <li class="li" >
-                    <a class="me" href="blog.html" data-description="Tous les commande">Commande</a>
+                    <a class="me" href="{{ path('Commande.index')}}" data-description="Tous les commande">Commande</a>
                     
                 </li>
                 <li class="li" >
-                    <a class="me" href="portfolio-4-columns.html" data-description="List de tous les produit">Produit</a>
+                    <a class="me" href="{{ path('Produit.index')}}" data-description="List de tous les produit">Produit</a>
                     
                 </li>
                 <li class="li" >
-                    <a class="me" href="contact-us.html" data-description="Enquire here">Contact</a>
+                    <a class="me" href="{{ path('Contact.index')}}" data-description="Enquire here">Contact</a>
                 </li>
             </ul>
     

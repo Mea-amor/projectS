@@ -22,7 +22,7 @@ class CommandeController
      {
         // $number = random_int(0, 100);
  
-         return new Response($this->twig ->render('commende/acceuilCommende.html.twig') );
+         return new Response($this->twig ->render('commande/acceuilCommande.html.twig') );
      }
     
     }
