@@ -3,7 +3,6 @@
 /* ---------------------------------------------------------------------- */
 .ul{list-style:none}
 
-html,body,div,and,.ul,.li,menu,nav{background:transparent;border:0;font-size:100%;margin:0;outline:0;padding:0;vertical-align:baseline}header,nav{display:block}body{line-height:1}
 /* Clearfix */
 .clear{clear:both;display:block;height:0;overflow:hidden;visibility:hidden;width:0}.clearfix:after{clear:both;content:' ';display:block;font-size:0;height:0;line-height:0;visibility:hidden;width:0}* html .clearfix,:first-child+html .clearfix{zoom:1}
 
@@ -21,8 +20,7 @@ body {
 	border-top: 6px solid #3a3a3a;
 	color: #909090;
 	font: 11px/1.7 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
-	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
-	-webkit-text-size-adjust: 100%;
+	
 }
 
 ::-moz-selection { background: #f15a23; color: #fff; text-shadow: none; }
@@ -63,8 +61,11 @@ body {
 }
 
 	#logo {
-		float: left;
+		position: absolute;
+		top: -50px;
 		height: 86px;
+		
+
 	}
 
 	/* -------------------------------------------------- */

@@ -2,27 +2,33 @@
 // src/Controller/LuckyController.php
 namespace App\Controller;
 
+use App\Entity\Client;
+use App\Repository\ClientRepository;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
-use Twig\Environment;
 
-class ClientController
+
+class ClientController extends AbstractController
 {
      
-    /**
-     *@var Environment 
+    
+
+      /**
+     *@param ClientRepository $repository
     */ 
-      private $twig;
+    // private $repository;
+
    
-     public function __construct(Environment $twigs){
+    //  public function __construct(){
          
-         $this->twig = $twigs ;
+    //      $this->repository = $repository ;
+    //  }
+
+     public function index(ClientRepository $repository ) : Response
+     {
+        
+        $client=$repository->findAll();
+         return $this->render('client/aceuilClient.html.twig', ['client'=> $client ]);
      }
 
-     public function index()
-     {
-        // $number = random_int(0, 100);
- 
-         return new Response($this->twig ->render('client/aceuilClient.html.twig') );
-     }
-    
     }

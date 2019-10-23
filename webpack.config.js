@@ -24,11 +24,21 @@ Encore
      * and one CSS file (e.g. app.css) if your JavaScript imports CSS.
      */
     .addEntry('app', './assets/js/app.js')
+    .addEntry('logos', './assets/images/logos.png')
+    .addEntry('flex1', './assets/images/1.jpg')
+    .addEntry('flex2', './assets/images/2.jpg')
+    .addEntry('flex3', './assets/images/3.jpg')
+    .addEntry('flex4', './assets/images/4.jpg')
+    .addEntry('favicon', './assets/images/favicon.ico')
+
     //.addEntry('page1', './assets/js/page1.js')
     //.addEntry('page2', './assets/js/page2.js')
     .addStyleEntry('menu_slide', './assets/css/mea.css')
     .addStyleEntry('font_awesome', './assets/css/font_awesome.css')
     .addStyleEntry('header', './assets/css/header.css')
+    .addStyleEntry('flexible', './assets/css/flexible.css')
+    .addStyleEntry('animate', './assets/css/animate_min.css')
+    .addStyleEntry('acceuil', './assets/css/acceuil.css')
 
 
     // When enabled, Webpack "splits" your files into smaller pieces for greater optimization.
